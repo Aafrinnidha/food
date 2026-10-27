@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🍴 Food Delivery</h1>
+        <p>Order your favourite food!</p>
+    </header>
+
+    <main>
+
+        <!-- Restaurant Page -->
+        <section id="restaurants">
+            <h2>Available Restaurants</h2>
+
+            <div class="card">
+                <h3>🍔 Crave Corner</h3>
+                <p>Burgers, Pizza and Snacks</p>
+                <button onclick="showFoods('Crave Corner')">
+                    Choose Restaurant
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>🍛 Spice Street</h3>
+                <p>Delicious Indian Foods</p>
+                <button onclick="showFoods('Spice Street')">
+                    Choose Restaurant
+                </button>
+            </div>
+        </section>
+
+        <!-- Food Menu Page -->
+        <section id="foods" hidden>
+            <h2 id="restaurant-title"></h2>
+
+            <div id="food-list"></div>
+
+            <button class="back" onclick="goBack()">
+                Back to Restaurants
+            </button>
+        </section>
+
+        <!-- Order Confirmation Page -->
+        <section id="confirmation" hidden>
+            <h2>✅ Order Placed Successfully!</h2>
+
+            <p>Thank you for ordering with us!</p>
+
+            <div id="order-details"></div>
+
+            <button onclick="restartApp()">
+                Order Again
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Food Delivery App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
