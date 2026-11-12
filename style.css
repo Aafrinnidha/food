@@ -83,7 +83,33 @@ button:hover {
 }
 
 .food-info p {
-    margin: 0;
+    margin: 5px 0;
+}
+
+/* Shopping Cart */
+#cart {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-top: 25px;
+    border: 1px solid #D8E9DD;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #173D2810;
+}
+
+#cart h2 {
+    color: #236B4A;
+}
+
+#cart h3 {
+    color: #236B4A;
+}
+
+#cart-total {
+    font-weight: bold;
+}
+
+#cart-items .food-card {
+    border: 1px solid #D8E9DD;
 }
 
 .back {
