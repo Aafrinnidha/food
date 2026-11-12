@@ -112,6 +112,24 @@ button:hover {
     border: 1px solid #D8E9DD;
 }
 
+.cart-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-btn,
+.clear-btn {
+    background-color: #C0392B;
+}
+
+.remove-btn:hover,
+.clear-btn:hover {
+    background-color: #922B21;
+}
+
+/* Back Button */
 .back {
     background-color: #64766A;
     margin-top: 15px;
@@ -121,6 +139,7 @@ button:hover {
     background-color: #46564B;
 }
 
+/* Confirmation Page */
 #confirmation {
     background-color: #FFFFFF;
     padding: 25px;
@@ -135,6 +154,19 @@ button:hover {
     margin: 20px 0;
 }
 
+.order-item {
+    text-align: left;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #D8E9DD;
+    border-radius: 8px;
+    background-color: #F9FCFA;
+}
+
+.order-item h3 {
+    color: #28583C;
+}
+
 footer {
     padding: 10px;
     color: #64766A;
@@ -145,7 +177,9 @@ footer {
     display: none !important;
 }
 
+/* Mobile Responsive */
 @media (max-width: 480px) {
+
     main {
         padding: 10px;
     }
@@ -157,4 +191,9 @@ footer {
     .food-card button {
         margin-left: auto;
     }
+
+    .cart-controls {
+        width: 100%;
+    }
+
 }
